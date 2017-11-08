@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,36 +8,37 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'static/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
   </head>
 
   <body>
 
-    <section class="jumbotron text-center">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
       <div class="container">
-        <h1 class="jumbotron-heading">Biblioteca ITT</h1>
-        <p class="lead text-muted">Web que cuenta con los registros de los libros disponibles en la biblioteca del Instituto Tecnologico de Tijuana. </p>
-        <p>
-          <a href="#" class="btn btn-primary">Registro de libros</a>
-        </p>
+        <h1 class="display-3">Instituto Tecnologico de Tijuana</h1>
       </div>
-    </section>
+    </div>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Acervo Literario de ITT</h2>
+          <h3><p><a class="nav-link1" href="/libros/lista" style="color: black">Lista de libros</a></p><h3>
+        </div>
       </div>
-    </footer>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2017</p>
+      </footer>
+    </div> <!-- /container -->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -45,12 +46,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      $(function () {
-        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
-      });
-    </script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
