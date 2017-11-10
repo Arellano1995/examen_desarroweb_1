@@ -29,8 +29,9 @@
     </div>
 
     <div class="container">
+      {% include "libros/Busqueda.html" %}
       <!-- Example row of columns -->
-      {%for i in result%}
+      {%for i in object_list%}
     <div class="row">
     <span class="card" style="width: 20rem;">
     <h3><img data-src="#" alt="{{i.titulo}}"><h3>
@@ -47,9 +48,6 @@
 
       <hr>
 
-      <footer>
-        <p>&copy; Company 2017</p>
-      </footer>
     </div> <!-- /container -->
 
 
